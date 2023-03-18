@@ -2,15 +2,30 @@ version: '3'
 
 services:
   bind9:
-    container_name: DNS-SERVER
+    container_name: DNS-1
     image: ubuntu/bind9:latest
     environment:
       - BIND9_USER=root
-    ports:
-      - "53:53/tcp"
-      - "53:53/udp"
+    # Testing
     networks:
-      default:
+      externalip:
+        ipv4_address: 192.168.68.9
+    # ports:
+    #   - "53:53/tcp"
+    #   - "53:53/udp"
+    # networks:
+    #   default:
     volumes:
-      - ./DNS/Configuration:/etc/bind
+      - ./Configuration:/etc/bind
     restart: unless-stopped
+networks:
+  externalip:
+    name: externalip
+    driver: macvlan
+    driver_opts:
+      parent: enp1s0
+    ipam:
+      config:
+        - subnet: "192.168.68.0/24"
+          ip_range: "192.168.68.0/24"
+          gateway: "192.168.68.1"

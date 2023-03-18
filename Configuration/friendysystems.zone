@@ -1,6 +1,6 @@
 $TTL 2d
 
-$ORIGIN friendywill.local.
+$ORIGIN friendysystems.com.
 @               IN      SOA     ns.friendysystems.com. friendywill.hotmail.com (
                         2023021100         ; Serial
                         12h                ; Refresh
@@ -9,6 +9,7 @@ $ORIGIN friendywill.local.
                         2h                 ; Negative Cache TTL
                         )
                 IN      NS  ns.friendysystems.com.
-ns              IN      A   192.168.68.10
+ns              IN      A   192.168.68.9
+ns              IN      A   192.168.68.8
 
 ; -- dns records

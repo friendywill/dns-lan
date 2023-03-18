@@ -1,0 +1,14 @@
+$TTL 2d
+
+$ORIGIN friendywill.local.
+@               IN      SOA     ns.friendysystems.com. friendywill.hotmail.com (
+                        2023021100         ; Serial
+                        12h                ; Refresh
+                        1m                 ; Retry
+                        3w                 ; Expire
+                        2h                 ; Negative Cache TTL
+                        )
+                IN      NS  ns.friendysystems.com.
+ns              IN      A   192.168.68.10
+
+; -- dns records

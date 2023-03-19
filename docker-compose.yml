@@ -2,7 +2,7 @@ version: '3'
 
 services:
   bind9:
-    container_name: DNS-1
+    container_name: DNS-2
     image: ubuntu/bind9:latest
     environment:
       - BIND9_USER=root
@@ -16,7 +16,7 @@ services:
     restart: unless-stopped
 networks:
   DNS-Network-1:
-    name: DNS-Network-1
+    name: DNS-Network-2
     driver: bridge
     driver_opts:
-      parent: DNS-IF-1
+      parent: DNS-IF-2

@@ -6,26 +6,17 @@ services:
     image: ubuntu/bind9:latest
     environment:
       - BIND9_USER=root
-    # Testing
     networks:
-      dockernettoexternal:
-        ipv4_address: 192.168.68.9
-    # ports:
-    #   - "53:53/tcp"
-    #   - "53:53/udp"
-    # networks:
-    #   default:
+      DNS-Network-1:
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
     volumes:
       - ./Configuration:/etc/bind
     restart: unless-stopped
 networks:
-  dockernettoexternal:
-    name: dockernettoexternal
-    driver: macvlan
+  DNS-Network-1:
+    name: DNS-Network-1
+    driver: bridge
     driver_opts:
-      parent: dockerrouteif
-    ipam:
-      config:
-        - subnet: "192.168.68.0/24"
-          ip_range: "192.168.68.0/24"
-          gateway: "192.168.68.1"
+      parent: DNS-IF-1

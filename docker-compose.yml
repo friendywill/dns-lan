@@ -18,5 +18,3 @@ networks:
   DNS-Network-1:
     name: DNS-Network-1
     driver: bridge
-    driver_opts:
-      parent: DNS-IF-1

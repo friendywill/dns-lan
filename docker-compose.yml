@@ -15,6 +15,6 @@ services:
       - ./Configuration:/etc/bind
     restart: unless-stopped
 networks:
-  DNS-Network-1:
+  DNS-Network:
     name: DNS-Network
     driver: bridge

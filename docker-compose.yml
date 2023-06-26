@@ -6,8 +6,6 @@ services:
     image: ubuntu/bind9:latest
     environment:
       - BIND9_USER=root
-    networks:
-      DNS-Network:
     ports:
       - "53:53/tcp"
       - "53:53/udp"
@@ -15,6 +13,3 @@ services:
       - ./Configuration:/etc/bind
     restart: unless-stopped
 networks:
-  DNS-Network:
-    name: DNS-Network
-    driver: bridge

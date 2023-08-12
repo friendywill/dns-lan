@@ -2,7 +2,7 @@ $TTL 2d
 
 $ORIGIN friendysystems.com.
 @               IN      SOA     ns.friendysystems.com. friendywill.hotmail.com (
-                        2023021100         ; Serial
+                        2023081201         ; Serial
                         12h                ; Refresh
                         1m                 ; Retry
                         3w                 ; Expire
@@ -16,4 +16,4 @@ ns              IN      A   192.168.68.11
 wills-creative  IN      A       192.168.68.11
 wills-survival  IN      A       192.168.68.11
 uberinstincts  IN      A       192.168.68.11
-friendywillsserver  IN      A       192.168.68.11
+friendywillsserver  IN      A       192.168.68.10

@@ -7,9 +7,16 @@ services:
     environment:
       - BIND9_USER=root
       - TZ=Australia/Canberra
-    ports:
-      - "53:53/tcp"
-      - "53:53/udp"
+    networks:
+      steam-cache:
+        ipv4_address: 172.30.0.69
     volumes:
       - ./Configuration:/etc/bind
     restart: always
+networks:
+  steam-cache:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.30.0.0/24

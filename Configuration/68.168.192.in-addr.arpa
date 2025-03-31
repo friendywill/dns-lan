@@ -1,16 +1,16 @@
 $TTL 2d
 
 $ORIGIN 68.168.192.in-addr.arpa.
-@               IN      SOA     ns.friendysystems.com. friendywill.hotmail.com (
+@               IN      SOA     ns.friendy.dev. will.friendy.dev (
                         2023081201         ; Serial
                         12h                ; Refresh
                         1m                 ; Retry
                         3w                 ; Expire
                         2h                 ; Negative Cache TTL
                         )
-                IN      NS      ns.friendysystems.com.
+                IN      NS      ns.friendy.dev.
 
 ; PTR records
 
-10              IN      PTR     friendywillsserver.friendysystems.com.
-11              IN      PTR     uberinstincts.friendysystems.com.
+10              IN      PTR     fd-server-01.friendy.dev.
+11              IN      PTR     fd-server-02.friendy.dev.

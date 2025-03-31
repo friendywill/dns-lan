@@ -1,21 +1,22 @@
 $TTL 2d
 
-$ORIGIN friendysystems.com.
-@               IN      SOA     ns.friendysystems.com. friendywill.hotmail.com (
+$ORIGIN friendy.dev.
+@               IN      SOA     ns.friendy.dev. will.friendy.dev (
                         2023081201         ; Serial
                         12h                ; Refresh
                         1m                 ; Retry
                         3w                 ; Expire
                         2h                 ; Negative Cache TTL
                         )
-                IN      NS  ns.friendysystems.com.
+                IN      NS  ns.friendy.dev.
 ns              IN      A   192.168.68.11
 
 ; -- dns records
 
-wills-creative  IN      A       192.168.68.11
-wills-survival  IN      A       192.168.68.11
-uberinstincts  IN      A       192.168.68.11
-friendywillsserver  IN      A       192.168.68.10
+@  IN      A       192.168.68.10
+wills-creative  IN      A       192.168.68.10
+wills-survival  IN      A       192.168.68.10
+fd-server-02 IN      A       192.168.68.11
+fd-server-01 IN      A       192.168.68.10
 www             IN      A       192.168.68.11
-*             IN      A       192.168.68.11
+*             IN      A       192.168.68.10

@@ -14,6 +14,8 @@ ns              IN      A   192.168.68.11
 ; -- dns records
 
 @  IN      A       192.168.68.10
+creative  IN      A       192.168.68.10
+survival  IN      A       192.168.68.10
 wills-creative  IN      A       192.168.68.10
 wills-survival  IN      A       192.168.68.10
 fd-server-02 IN      A       192.168.68.11

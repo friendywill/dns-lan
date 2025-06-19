@@ -10,7 +10,7 @@ services:
       - "127.0.0.1:53:53/tcp"
       - "127.0.0.1:53:53/udp"
     volumes:
-      - ./Configuration:/etc/bind
+      - ./conf/internal-zone/:/etc/bind
     restart: always
 networks:
   steam-cache:

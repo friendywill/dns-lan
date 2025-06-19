@@ -21,6 +21,5 @@ wills-creative  IN      A       192.168.68.10
 wills-survival  IN      A       192.168.68.10
 fd-server-02 IN      A       192.168.68.11
 fd-server-01 IN      A       192.168.68.10
-www             IN      A       192.168.68.11
 stardew          IN      A       192.168.68.10
 *             IN      A       192.168.68.10

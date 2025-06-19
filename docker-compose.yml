@@ -1,6 +1,5 @@
 services:
-  bind9:
-    container_name: DNS
+  internal-zone:
     image: ubuntu/bind9:latest
     environment:
       - BIND9_USER=root

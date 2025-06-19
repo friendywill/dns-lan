@@ -9,7 +9,7 @@ $ORIGIN friendy.dev.
                         2h                 ; Negative Cache TTL
                         )
                 IN      NS  ns.friendy.dev.
-ns              IN      A   192.168.68.11
+ns              IN      A   192.168.68.10
 
 ; -- dns records
 

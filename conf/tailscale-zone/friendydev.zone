@@ -1,0 +1,25 @@
+$TTL 2d
+
+$ORIGIN friendy.dev.
+@               IN      SOA     ns.friendy.dev. will.friendy.dev (
+                        2025061201         ; Serial
+                        12h                ; Refresh
+                        1m                 ; Retry
+                        3w                 ; Expire
+                        2h                 ; Negative Cache TTL
+                        )
+                IN      NS  ns.friendy.dev.
+ns              IN      A 100.108.97.96
+
+; -- dns records
+
+@  IN      A            100.108.97.96
+creative  IN      A     100.108.97.96
+survival  IN      A     100.108.97.96
+teamspeak IN      A     100.108.97.96
+wills-creative  IN      A                       100.108.97.96
+wills-survival  IN      A                       100.108.97.96
+fd-server-02 IN      A  100.108.97.96
+fd-server-01 IN      A  100.108.97.96
+stardew          IN      A                      100.108.97.96
+*             IN      A 100.108.97.96

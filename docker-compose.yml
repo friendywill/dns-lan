@@ -12,6 +12,17 @@ services:
     volumes:
       - ./conf/internal-zone/:/etc/bind
     restart: always
+  tailscale-zone:
+    image: ubuntu/bind9:latest
+    environment:
+      - BIND9_USER=root
+      - TZ=Australia/Canberra
+    ports:
+      - "100.108.97.96:53:53/tcp"
+      - "100.108.97.96:53:53/udp"
+    volumes:
+      - ./conf/tailscale-zone/:/etc/bind
+    restart: always
 networks:
   steam-cache:
     driver: bridge
